@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og</title>
+<style>
+  @font-face { font-family: "NT Sans"; src: url("/assets/fonts/novatech-sans.woff2") format("woff2"); font-weight: 400 800; font-display: block; }
+  @font-face { font-family: "NT Serif"; src: url("/assets/fonts/novatech-serif-display.woff2") format("woff2"); font-weight: 400 700; font-display: block; }
+
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    padding: 64px 72px;
+    display: flex;
+    flex-direction: column;
+    background:
+      radial-gradient(52% 62% at 80% 14%, rgba(69, 214, 242, .16), transparent 66%),
+      radial-gradient(46% 54% at 98% 92%, rgba(169, 139, 255, .15), transparent 70%),
+      linear-gradient(170deg, #0a1322, #070d18 58%, #04080f);
+    color: #f2f6fc;
+    font-family: "NT Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(146,187,235,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(146,187,235,.06) 1px, transparent 1px);
+    background-size: 72px 72px;
+    -webkit-mask-image: radial-gradient(100% 80% at 70% 24%, #000 6%, transparent 74%);
+  }
+  .inner { position: relative; display: flex; flex-direction: column; height: 100%; }
+
+  .brand { display: flex; align-items: center; gap: 14px; font-size: 26px; font-weight: 800; letter-spacing: -.035em; }
+  .brand svg { width: 34px; height: 34px; }
+  .brand i { font-style: normal; color: #45d6f2; }
+
+  .eyebrow {
+    margin-top: 44px;
+    display: flex; align-items: center; gap: 12px;
+    font-size: 15px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #a9b8ce;
+  }
+  .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #45d6f2; }
+
+  h1 {
+    margin-top: 22px;
+    font-family: "NT Serif", serif;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 1.04;
+    letter-spacing: -.032em;
+    max-width: 17ch;
+  }
+  h1 .muted { color: #97a6bf; font-weight: 400; }
+  body[data-size="s"] h1 { font-size: 56px; max-width: 19ch; }
+
+  .sub {
+    margin-top: 26px;
+    padding-left: 20px;
+    border-left: 3px solid #45d6f2;
+    font-family: "NT Serif", serif;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -.012em;
+    max-width: 40ch;
+  }
+  .sub b { font-weight: 600; color: #45d6f2; }
+
+  .chips { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips span {
+    padding: 8px 12px; border-radius: 3px;
+    font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  }
+  .c1 { background: rgba(69,214,242,.14); color: #6fe2fb; }
+  .c2 { background: rgba(169,139,255,.16); color: #c3aeff; }
+  .c3 { background: rgba(242,246,252,.1); color: #d5deec; }
+  .c4 { background: rgba(64,214,170,.14); color: #63dfb8; }
+
+  footer {
+    margin-top: auto;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 17px; color: #97a6bf; letter-spacing: -.005em;
+  }
+  footer b { color: #f2f6fc; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="inner">
+    <div class="brand">
+      <svg viewBox="13 14 38 36" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 43V27l9-5v16l9-6v13l9-6V20l9-5v29l-9 5V36l-9 6V29l-9 5v14z" fill="url(#g)"/>
+        <defs><linearGradient id="g" x1="14" y1="15" x2="51" y2="49" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#45d6f2"/><stop offset="1" stop-color="#a98bff"/>
+        </linearGradient></defs>
+      </svg>
+      <span>NovaTech<i>AI</i></span>
+    </div>
+
+    <p class="eyebrow" data-slot="eyebrow"></p>
+    <h1 data-slot="title"></h1>
+    <div data-slot="body"></div>
+
+    <footer>
+      <span data-slot="foot"></span>
+      <b>novatechai.com</b>
+    </footer>
+  </div>
+
+<script>
+var variants = {
+  home: {
+    size: "m",
+    eyebrow: "Data · AI · Automation · Applied research",
+    title: 'Intelligence that earns its place <span class="muted">in your operations.</span>',
+    body: '<p class="sub"><b>You own the data.</b> We turn it into intelligence that drives your business.</p>',
+    foot: "Data intelligence · Custom AI · Intelligent automation · Applied research"
+  },
+  insights: {
+    size: "m",
+    eyebrow: "Blogs and insights",
+    title: 'Research and perspective <span class="muted">on applied AI.</span>',
+    body: '<p class="sub">Evidence-led briefings with every claim labelled and every source cited.</p>',
+    foot: "NovaTechAI research briefings"
+  },
+  agentic: {
+    size: "s",
+    eyebrow: "Research briefing · 12 September 2026",
+    title: 'How agentic work can help companies <span class="muted">grow revenue.</span>',
+    body: '<div class="chips"><span class="c1">Research finding</span><span class="c2">Industry forecast</span><span class="c3">NovaTechAI analysis</span><span class="c4">Recommendation</span></div>',
+    foot: "Sources: Capgemini · PwC · Google Cloud · OpenAI"
+  }
+};
+var key = new URLSearchParams(location.search).get("v") || "home";
+var v = variants[key];
+document.body.dataset.size = v.size;
+document.querySelector('[data-slot="eyebrow"]').textContent = v.eyebrow;
+document.querySelector('[data-slot="title"]').innerHTML = v.title;
+document.querySelector('[data-slot="body"]').innerHTML = v.body;
+document.querySelector('[data-slot="foot"]').textContent = v.foot;
+</script>
+</body>
+</html>

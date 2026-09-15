@@ -1,0 +1,348 @@
+{
+  "console": [],
+  "failed": [],
+  "pages": {
+    "/": {
+      "title": "NovaTechAI — Data, AI and automation consultancy",
+      "titleLen": 48,
+      "descLen": 160,
+      "canonical": "https://novatechai.com/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "Intelligence that earns its place in your operations.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 12,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/solutions/": {
+      "title": "AI, data and automation solutions | NovaTechAI",
+      "titleLen": 46,
+      "descLen": 145,
+      "canonical": "https://novatechai.com/solutions/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "Four practices that work as one.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/platforms/": {
+      "title": "Enterprise platforms — Azure, Copilot Studio, Fabric | NovaTechAI",
+      "titleLen": 65,
+      "descLen": 147,
+      "canonical": "https://novatechai.com/platforms/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "More value from the platform your teams already use.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/work/": {
+      "title": "Representative client work | NovaTechAI",
+      "titleLen": 39,
+      "descLen": 146,
+      "canonical": "https://novatechai.com/work/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "Real problems. Working systems.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/training/": {
+      "title": "Free training with every AI solution | NovaTechAI",
+      "titleLen": 49,
+      "descLen": 154,
+      "canonical": "https://novatechai.com/training/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "We do not just deliver. We make sure your people can use it.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/research/": {
+      "title": "Applied AI research | NovaTechAI",
+      "titleLen": 32,
+      "descLen": 142,
+      "canonical": "https://novatechai.com/research/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "We test what is next before we recommend it.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/contact/": {
+      "title": "Contact NovaTechAI | experts@novatechai.com",
+      "titleLen": 43,
+      "descLen": 144,
+      "canonical": "https://novatechai.com/contact/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "What could your organization do better, faster or more consistently?",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/blogs/": {
+      "title": "Blogs and insights | NovaTechAI research briefings",
+      "titleLen": 50,
+      "descLen": 138,
+      "canonical": "https://novatechai.com/blogs/",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "Research and perspective on applied AI.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/blogs/agentic-ai-revenue.html": {
+      "title": "How agentic work can help companies grow revenue | NovaTechAI",
+      "titleLen": 61,
+      "descLen": 153,
+      "canonical": "https://novatechai.com/blogs/agentic-ai-revenue.html",
+      "robots": null,
+      "og": true,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "How agentic work can help companies grow revenue.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 1,
+      "hashLinks": [
+        "#main",
+        "#reading",
+        "#evidence",
+        "#levers",
+        "#system",
+        "#measure",
+        "#start",
+        "#sources"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    },
+    "/404.html": {
+      "title": "Page not found | NovaTechAI",
+      "titleLen": 27,
+      "descLen": 126,
+      "canonical": null,
+      "robots": "noindex, follow",
+      "og": false,
+      "lang": "en",
+      "h1Count": 1,
+      "h1": "That page is not here. Everything else still is.",
+      "jumps": [],
+      "landmarks": {
+        "main": 1,
+        "header": 1,
+        "footer": 1,
+        "navsLabelled": true
+      },
+      "imgs": 0,
+      "dupIds": [],
+      "inlineStyle": 0,
+      "hashLinks": [
+        "#main"
+      ],
+      "blankNoRel": 0,
+      "vagueText": [],
+      "emptyLinks": 0,
+      "mailtos": [
+        "mailto:experts@novatechai.com"
+      ],
+      "ownership": true
+    }
+  },
+  "overflow": [],
+  "menu": {
+    "toggleVisible": true,
+    "navHiddenInitially": true,
+    "ariaExpandedBefore": "false",
+    "ariaControlsResolves": true,
+    "ariaExpandedAfter": "true",
+    "navVisible": true,
+    "bodyScrollLocked": true,
+    "focusMovedIntoNav": true,
+    "labelWhenOpen": "Close menu",
+    "tabWrapsToToggle": true,
+    "escapeCloses": true,
+    "focusReturnedToToggle": true,
+    "scrollUnlocked": true,
+    "touchOpens": true,
+    "closesOnLinkTap": true,
+    "focusRingVisible": "none 3px",
+    "skipLinkFirst": true
+  },
+  "reducedMotion": {
+    "revealTargets": 30,
+    "stillInvisible": 0,
+    "scrollBehavior": "auto"
+  }
+}

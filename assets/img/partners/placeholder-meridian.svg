@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="Meridian Systems">
+  <g fill="none" stroke="#0b1626" stroke-width="3.2">
+    <circle cx="18" cy="24" r="11"/>
+    <path d="M7 24h22"/>
+  </g>
+  <text x="38" y="26" font-family="Arial,Helvetica,sans-serif" font-size="16.5" font-weight="700" letter-spacing="-.2" fill="#0b1626">MERIDIAN</text>
+  <text x="38" y="38" font-family="Arial,Helvetica,sans-serif" font-size="7.6" font-weight="600" letter-spacing="2.4" fill="#0b1626" opacity=".6">SYSTEMS</text>
+</svg>

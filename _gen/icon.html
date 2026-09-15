@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>icon</title>
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  body { width: 100vw; height: 100vh; overflow: hidden; }
+  .tile {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: #070d18;
+  }
+  body[data-round="1"] .tile { border-radius: 20%; }
+  svg { width: var(--mark, 62%); height: auto; }
+</style>
+<script>
+  var q = new URLSearchParams(location.search);
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.dataset.round = q.get("round") || "0";
+    document.documentElement.style.setProperty("--mark", (q.get("mark") || "62") + "%");
+  });
+</script>
+</head>
+<body>
+  <div class="tile">
+    <svg viewBox="13 14 38 36" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 43V27l9-5v16l9-6v13l9-6V20l9-5v29l-9 5V36l-9 6V29l-9 5v14z" fill="url(#g)"/>
+      <defs>
+        <linearGradient id="g" x1="14" y1="15" x2="51" y2="49" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#45d6f2"/>
+          <stop offset="1" stop-color="#a98bff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</body>
+</html>

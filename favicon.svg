@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NovaTechAI">
+  <rect width="64" height="64" rx="13" fill="#070d18"/>
+  <path d="M14 43V27l9-5v16l9-6v13l9-6V20l9-5v29l-9 5V36l-9 6V29l-9 5v14z" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="14" y1="15" x2="51" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45d6f2"/>
+      <stop offset="1" stop-color="#a98bff"/>
+    </linearGradient>
+  </defs>
+</svg>
