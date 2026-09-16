@@ -7,8 +7,8 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const ROOT = process.cwd();
-const SITE = "https://novatechai.com";
-const MAIL = "mailto:experts@novatechai.com";
+const SITE = "https://novatechai.us";
+const MAIL = "mailto:experts@novatechai.us";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    FILL THESE IN — the two blocks below are the only things standing between
@@ -93,7 +93,7 @@ const FOOTER = [
   {
     title: "Get in touch",
     links: [
-      [`${MAIL}?subject=Project%20enquiry%20for%20NovaTechAI`, "experts@novatechai.com"],
+      [`${MAIL}?subject=Project%20enquiry%20for%20NovaTechAI`, "experts@novatechai.us"],
       ["/blogs/agentic-ai-revenue.html", "Latest research briefing"],
     ],
   },
@@ -356,14 +356,14 @@ const PAGES = [
     out: "contact/index.html",
     url: "/contact/",
     crumb: "Contact",
-    title: "Contact NovaTechAI | experts@novatechai.com",
+    title: "Contact NovaTechAI | experts@novatechai.us",
     description:
-      "Bring us the problem, even if the solution is not clear yet. Email experts@novatechai.com and we will help you find the most valuable next step.",
+      "Bring us the problem, even if the solution is not clear yet. Email experts@novatechai.us and we will help you find the most valuable next step.",
     ogTitle: "Contact NovaTechAI",
     ogDescription:
       "Bring us the problem, even if the solution is not clear yet. We will tell you plainly if AI is not the right answer.",
     ogImage: "/assets/img/og-home.jpg",
-    ogAlt: "Contact NovaTechAI at experts@novatechai.com.",
+    ogAlt: "Contact NovaTechAI at experts@novatechai.us.",
     icons: ["i-arrow-ur", "i-arrow-r", "i-mail", "i-shield"],
   },
   {
@@ -501,7 +501,7 @@ ${items
       "@type": HAS_ADDRESS ? "ProfessionalService" : "Organization",
       name: "NovaTechAI",
       url: SITE + "/",
-      email: "experts@novatechai.com",
+      email: "experts@novatechai.us",
       logo: SITE + "/assets/img/icon-512.png",
       image: SITE + "/assets/img/og-home.jpg",
       description:

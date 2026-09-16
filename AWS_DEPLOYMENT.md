@@ -10,7 +10,7 @@ Replace the placeholders below with your own values:
 | `BUCKET` | S3 bucket name, e.g. `novatechai-site` |
 | `REGION` | Bucket region, e.g. `eu-west-1` |
 | `DIST_ID` | CloudFront distribution ID |
-| `example.com` | Your production domain (the site is currently configured for `novatechai.com`) |
+| `example.com` | Your production domain (the site is currently configured for `novatechai.us`) |
 
 Do not commit account IDs, access keys or distribution IDs to source control.
 
@@ -54,7 +54,7 @@ Upload everything **except** `_legacy/` and `_gen/`:
 
 ```
 index.html                        homepage
-solutions/index.html              capabilities + engagement process
+solutions/index.html              enterprise AI services and adoption journey
 platforms/index.html              enterprise platforms (Azure, Copilot Studio, Fabric)
 work/index.html                   representative (anonymized) client work
 training/index.html               free client training
@@ -90,9 +90,9 @@ CloudFront compression is enabled (HTML 8 KB + CSS 9 KB + JS 2 KB + 2 fonts).
 
 ### URL structure
 
-Every navigation target is a real URL. There are no `#section` navigation links
-anywhere on the site, so each page can be linked, shared, indexed and ranked on
-its own:
+Every primary navigation target is a real URL, so each page can be linked,
+shared and indexed on its own. The homepage also links directly to individual
+service rows on `/solutions/`:
 
 ```
 /            /solutions/   /platforms/   /work/
@@ -100,14 +100,13 @@ its own:
 /blogs/agentic-ai-revenue.html
 ```
 
-The primary navigation is: **Home · Solutions · Platforms · Our work · Training ·
+The primary navigation is: **Home · Services · Platforms · Our work · Training ·
 Research · Insights**, with *Contact us* as the call-to-action button. The
 wordmark also links home, so visitors have both routes. Nav items are declared
 once in `NAV` at the top of `_gen/build.mjs` and propagate to all ten pages.
 
-The only `#` links that remain are the keyboard skip link (`#main`, required by
-WCAG 2.4.1) and the article's own table of contents, where deep-linking to a
-section is intended behaviour.
+The `#` links are the keyboard skip link (`#main`), the homepage service links,
+and the article's table of contents.
 
 Because `/solutions/` and friends are directories, **the origin must resolve
 directory indexes** — see Option A or the CloudFront Function in Option B.
@@ -118,10 +117,11 @@ verification tooling. Neither is referenced by any page, and neither is needed a
 runtime. Delete both folders once you are satisfied, or keep them locally and
 exclude them from every upload as shown below.
 
-**Domain assumption.** Every canonical URL, the Open Graph URLs and `sitemap.xml`
-are set to `https://novatechai.com/` (apex, no `www`). If you deploy to a
-different host, run a find-and-replace on `https://novatechai.com` across
-`index.html`, `blogs/*.html`, `sitemap.xml` and `robots.txt`.
+**Domain assumption.** Every canonical URL, the Open Graph URLs, `sitemap.xml`
+and `robots.txt` use `https://novatechai.us/` (apex, no `www`). The page source
+of truth is `SITE` in `_gen/build.mjs`; rebuild the pages after changing it.
+The contact address is `experts@novatechai.us` in the page bodies and build
+script. The social images are generated from `_gen/og.html`.
 
 ---
 
@@ -393,7 +393,7 @@ An alias record is required for the apex domain — a CNAME is not legal there.
 
 ### Canonical host
 
-The pages declare `https://novatechai.com/` as canonical (apex). Pick one host
+The pages declare `https://novatechai.us/` as canonical (apex). Pick one host
 and redirect the other so you do not split ranking signals. The simplest way is a
 second CloudFront distribution, or a CloudFront Function on the `www` behaviour:
 
@@ -675,7 +675,7 @@ order of impact.
 ### What you have to do (no code involved)
 
 1. **Google Search Console** — verify the domain, submit
-   `https://novatechai.com/sitemap.xml`, then request indexing for each page.
+   `https://novatechai.us/sitemap.xml`, then request indexing for each page.
    Nothing gets indexed reliably until you do this. Verification is by DNS TXT
    record or an HTML file at the site root; neither needs a script on the page.
    Do the same at Bing Webmaster Tools, which also feeds ChatGPT search.
@@ -724,7 +724,7 @@ Console: impressions first, then clicks, then position.
 ## 15. How the email links behave
 
 There is no contact form — a static site has no backend to receive one — so
-every call to action is the address `experts@novatechai.com`.
+every call to action is the address `experts@novatechai.us`.
 
 A bare `mailto:` link is unreliable in practice. A visitor with no mail client
 configured (common on Windows, and on any machine where the person lives in
