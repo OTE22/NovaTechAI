@@ -64,7 +64,7 @@ const HAS_PHONE = Boolean(BUSINESS.telephone);
 
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/solutions/", label: "Solutions" },
+  { href: "/solutions/", label: "Services" },
   { href: "/platforms/", label: "Platforms" },
   { href: "/work/", label: "Our work" },
   { href: "/training/", label: "Training" },
@@ -76,7 +76,7 @@ const FOOTER = [
   {
     title: "What we do",
     links: [
-      ["/solutions/", "Solutions"],
+      ["/solutions/", "Services"],
       ["/platforms/", "Enterprise platforms"],
       ["/research/", "Applied AI research"],
       ["/training/", "Free client training"],
@@ -271,12 +271,12 @@ const PAGES = [
   {
     out: "index.html",
     url: "/",
-    title: "NovaTechAI — Data, AI and automation consultancy",
+    title: "Enterprise AI embedded in work | NovaTechAI",
     description:
-      "NovaTechAI helps organizations use data, AI, intelligent agents and automation to improve operations, decisions and services. Free training with every solution.",
-    ogTitle: "NovaTechAI — Data, AI and automation consultancy",
+      "NovaTechAI embeds Microsoft 365 Copilot, enterprise AI agents and secure automation into everyday work, from strategy through continuous adoption.",
+    ogTitle: "Enterprise AI, embedded in the way you work — NovaTechAI",
     ogDescription:
-      "Data intelligence, custom AI, intelligent automation and applied research — delivered with governance, human oversight and free hands-on training.",
+      "Microsoft 365 Copilot enablement, enterprise AI agents, secure integration and continuous adoption for organizations already using Microsoft.",
     ogImage: "/assets/img/og-home.jpg",
     ogAlt: "NovaTechAI — intelligence that earns its place in your operations.",
     icons: ["i-arrow-ur", "i-arrow-r", "i-arrow-d", "i-data", "i-ai", "i-auto", "i-research", "i-mail"],
@@ -285,15 +285,15 @@ const PAGES = [
   {
     out: "solutions/index.html",
     url: "/solutions/",
-    crumb: "Solutions",
-    title: "AI, data and automation solutions | NovaTechAI",
+    crumb: "Services",
+    title: "Enterprise AI services | NovaTechAI",
     description:
-      "Data intelligence, custom AI, intelligent automation and applied AI research, delivered as one engagement with governance and oversight built in.",
-    ogTitle: "Solutions — NovaTechAI",
+      "Explore NovaTechAI services: AI strategy, Microsoft 365 Copilot enablement, enterprise agents, secure integration and continuous adoption.",
+    ogTitle: "Enterprise AI services — NovaTechAI",
     ogDescription:
-      "Data intelligence, custom AI solutions, intelligent automation and applied AI research, delivered as one engagement.",
+      "From Microsoft 365 Copilot in daily work to enterprise agents, governance and ongoing optimization.",
     ogImage: "/assets/img/og-home.jpg",
-    ogAlt: "NovaTechAI solutions — data intelligence, custom AI, automation and applied research.",
+    ogAlt: "NovaTechAI — intelligence that earns its place in your operations.",
     icons: ["i-arrow-ur", "i-arrow-r", "i-data", "i-ai", "i-auto", "i-research", "i-mail", "i-shield"],
   },
   {
@@ -505,17 +505,16 @@ ${items
       logo: SITE + "/assets/img/icon-512.png",
       image: SITE + "/assets/img/og-home.jpg",
       description:
-        "NovaTechAI helps organizations use data, artificial intelligence, intelligent agents, automation and applied research to improve operations, decisions, services and revenue.",
+        "NovaTechAI helps organizations embed Microsoft 365 Copilot, enterprise AI agents and secure automation into everyday work.",
       knowsAbout: [
-        "Data intelligence",
-        "Artificial intelligence",
+        "Microsoft 365 Copilot",
+        "AI adoption",
+        "Enterprise AI agents",
         "Intelligent automation",
-        "Applied AI research",
-        "Microsoft Azure",
+        "AI governance",
         "Microsoft Copilot Studio",
-        "Microsoft Fabric",
-        "Power Platform",
-        "Dynamics 365",
+        "Microsoft Entra",
+        "Microsoft Purview",
       ],
     };
     if (HAS_PHONE) orgSchema.telephone = BUSINESS.telephone;
@@ -568,6 +567,9 @@ ${schema}${websiteSchema}${crumbSchema}${p.extraHead || ""}</head>`;
 function render(p) {
   let body = readFileSync(join(ROOT, "_gen/bodies", p.out.replace(/\//g, "__")), "utf8").trim();
   body = body
+    .replace("<!--ADOPTION-->", readFileSync(join(ROOT, "_gen/partials/adoption.html"), "utf8"))
+    .replace("<!--SERVICES-->", readFileSync(join(ROOT, "_gen/partials/services.html"), "utf8"))
+    .replace("<!--ECOSYSTEM-->", readFileSync(join(ROOT, "_gen/partials/ecosystem.html"), "utf8"))
     .replace("<!--PARTNERS-->", partnersSection())
     .replace("<!--NAP-->", napBlock(true));
   return `${head(p)}

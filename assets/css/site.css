@@ -1881,7 +1881,346 @@ strong {
   }
 }
 
-/* 12. Components added by the multi-page structure -------------------------- */
+/* 12. Enterprise AI service journey --------------------------------------- */
+.adoption-gap {
+  background: var(--paper);
+}
+
+.gap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--line);
+}
+
+.gap-card {
+  min-width: 0;
+  padding: clamp(1.45rem, 1.1rem + 1.15vw, 2.3rem);
+  background: var(--white);
+}
+
+.gap-card > span,
+.ecosystem__grid article > span {
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.gap-card h3 {
+  max-width: 25ch;
+  margin-bottom: 0.6rem;
+}
+
+.gap-card p {
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+.journey {
+  background: var(--paper-2);
+}
+
+.journey__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 2vw, 4.5rem);
+  align-items: center;
+}
+
+.journey__inner > div > p:last-child {
+  margin-top: 1.5rem;
+  max-width: 56ch;
+  color: var(--text-2);
+}
+
+.journey__steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.journey__steps li {
+  min-width: 0;
+  padding: 1.1rem 0.55rem 1rem;
+  border-top: 2px solid var(--accent);
+  background: var(--white);
+  color: var(--text);
+  font-size: clamp(0.66rem, 0.5rem + 0.45vw, 0.83rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.journey__steps li span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--text-3);
+  font-size: var(--fs-label);
+}
+
+.services-section {
+  background:
+    radial-gradient(55% 65% at 96% 0%, rgba(69, 214, 242, 0.08), transparent 75%),
+    var(--ink-900);
+  color: var(--on-ink);
+}
+
+.service-rows {
+  border-top: 1px solid var(--line-ink-2);
+}
+
+.service-row {
+  border-bottom: 1px solid var(--line-ink-2);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.service-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.service-row[open] {
+  background: var(--ink-800);
+  box-shadow: inset 3px 0 var(--cyan);
+}
+
+.service-row summary {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr) auto;
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+  min-height: 126px;
+  padding: 1.4rem clamp(1.2rem, 2.4vw, 2.2rem);
+  cursor: pointer;
+  list-style: none;
+  transition: background-color var(--dur) var(--ease);
+}
+
+.service-row summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-row summary:hover {
+  background: rgba(69, 214, 242, 0.055);
+}
+
+.service-row summary:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: -4px;
+}
+
+.service-row__number {
+  align-self: start;
+  padding-top: 0.4rem;
+  color: var(--cyan);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  font-variant-numeric: tabular-nums;
+}
+
+.service-row__main {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.service-row__title {
+  display: block;
+  max-width: 36ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1.1rem + 0.85vw, 1.85rem);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.service-row__main > small {
+  display: block;
+  max-width: 64ch;
+  color: var(--on-ink-2);
+  font-size: var(--fs-sm);
+}
+
+.service-row__action {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  white-space: nowrap;
+  color: var(--cyan);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.service-row__label-close,
+.service-row[open] .service-row__label-open {
+  display: none;
+}
+
+.service-row[open] .service-row__label-close {
+  display: inline;
+}
+
+.service-row__action span[aria-hidden] {
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: transform var(--dur) var(--ease);
+}
+
+.service-row[open] .service-row__action span {
+  transform: rotate(90deg);
+}
+
+.service-row__detail {
+  margin: 0 clamp(1.2rem, 2.4vw, 2.2rem) 2rem calc(3rem + clamp(1rem, 2vw, 2rem) + clamp(1.2rem, 2.4vw, 2.2rem));
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line-ink);
+}
+
+.service-row__thesis {
+  margin-bottom: 1.7rem;
+  color: var(--on-ink);
+  font-family: var(--font-text);
+  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.25rem);
+  font-style: italic;
+}
+
+.service-row__columns {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.service-row__columns h4 {
+  margin-bottom: 0.6rem;
+  color: var(--cyan);
+  font-size: var(--fs-label);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.service-row__columns p,
+.services-section__foot {
+  color: var(--on-ink-2);
+  font-size: var(--fs-sm);
+}
+
+.services-section__foot {
+  margin-top: 1.7rem;
+}
+
+.ecosystem {
+  background: var(--white);
+}
+
+.ecosystem__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--line);
+}
+
+.ecosystem__grid article {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.45rem, 1.1rem + 1vw, 2.1rem);
+  background: var(--paper);
+}
+
+.ecosystem__grid article > span {
+  margin-bottom: 1.8rem;
+}
+
+.ecosystem__grid h3 {
+  margin-bottom: 0.8rem;
+}
+
+.ecosystem__grid p {
+  margin-bottom: 1.8rem;
+  color: var(--text-2);
+  font-size: var(--fs-sm);
+}
+
+.ecosystem__grid small {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line-2);
+  color: var(--accent);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+}
+
+.ecosystem__note {
+  margin-top: 1.2rem;
+  max-width: 95ch;
+  color: var(--text-3);
+  font-size: var(--fs-xs);
+}
+
+@media (max-width: 1100px) {
+  .journey__inner {
+    grid-template-columns: 1fr;
+  }
+  .service-row__columns,
+  .ecosystem__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .gap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .service-row summary {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    min-height: 0;
+  }
+  .service-row__action {
+    grid-column: 2;
+  }
+  .service-row__detail {
+    margin-left: clamp(1.2rem, 2.4vw, 2.2rem);
+  }
+}
+
+@media (max-width: 560px) {
+  .gap-grid,
+  .service-row__columns,
+  .ecosystem__grid {
+    grid-template-columns: 1fr;
+  }
+  .journey__steps {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .journey__steps li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-top: 0;
+    border-left: 2px solid var(--accent);
+    text-align: left;
+  }
+  .journey__steps li + li {
+    border-top: 1px solid var(--line);
+  }
+  .journey__steps li span {
+    margin: 0;
+  }
+}
+
+/* 13. Components added by the multi-page structure -------------------------- */
 
 /* "Read more" link that closes a section */
 .section-more {
