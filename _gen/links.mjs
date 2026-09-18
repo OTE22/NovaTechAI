@@ -58,7 +58,7 @@ for (const page of PAGES) {
     }
     if (href.startsWith("mailto:")) {
       stats.mailto++;
-      if (!href.startsWith("mailto:experts@novatechai.us")) {
+      if (!href.startsWith("mailto:experts@novatechai.site")) {
         problems.push(`${page}: unexpected mailto target -> ${href}`);
       }
       continue;
@@ -125,7 +125,7 @@ for (const page of PAGES) {
   // no third-party origins at all
   for (const m of html.matchAll(/(?:href|src)=["']https?:\/\/([^/"']+)/g)) {
     const host = m[1];
-    if (host !== "novatechai.us") {
+    if (host !== "novatechai.site") {
       const ctx = html.slice(Math.max(0, m.index - 60), m.index);
       if (!/<a\b[^>]*$/.test(ctx)) problems.push(`${page}: third-party subresource host -> ${host}`);
     }

@@ -10,7 +10,7 @@ Replace the placeholders below with your own values:
 | `BUCKET` | S3 bucket name, e.g. `novatechai-site` |
 | `REGION` | Bucket region, e.g. `eu-west-1` |
 | `DIST_ID` | CloudFront distribution ID |
-| `example.com` | Your production domain (the site is currently configured for `novatechai.us`) |
+| `example.com` | Your production domain (the site is currently configured for `novatechai.site`) |
 
 Do not commit account IDs, access keys or distribution IDs to source control.
 
@@ -118,9 +118,9 @@ runtime. Delete both folders once you are satisfied, or keep them locally and
 exclude them from every upload as shown below.
 
 **Domain assumption.** Every canonical URL, the Open Graph URLs, `sitemap.xml`
-and `robots.txt` use `https://novatechai.us/` (apex, no `www`). The page source
+and `robots.txt` use `https://novatechai.site/` (apex, no `www`). The page source
 of truth is `SITE` in `_gen/build.mjs`; rebuild the pages after changing it.
-The contact address is `experts@novatechai.us` in the page bodies and build
+The contact address is `experts@novatechai.site` in the page bodies and build
 script. The social images are generated from `_gen/og.html`.
 
 ---
@@ -393,7 +393,7 @@ An alias record is required for the apex domain — a CNAME is not legal there.
 
 ### Canonical host
 
-The pages declare `https://novatechai.us/` as canonical (apex). Pick one host
+The pages declare `https://novatechai.site/` as canonical (apex). Pick one host
 and redirect the other so you do not split ranking signals. The simplest way is a
 second CloudFront distribution, or a CloudFront Function on the `www` behaviour:
 
@@ -675,7 +675,7 @@ order of impact.
 ### What you have to do (no code involved)
 
 1. **Google Search Console** — verify the domain, submit
-   `https://novatechai.us/sitemap.xml`, then request indexing for each page.
+   `https://novatechai.site/sitemap.xml`, then request indexing for each page.
    Nothing gets indexed reliably until you do this. Verification is by DNS TXT
    record or an HTML file at the site root; neither needs a script on the page.
    Do the same at Bing Webmaster Tools, which also feeds ChatGPT search.
@@ -724,7 +724,7 @@ Console: impressions first, then clicks, then position.
 ## 15. How the email links behave
 
 There is no contact form — a static site has no backend to receive one — so
-every call to action is the address `experts@novatechai.us`.
+every call to action is the address `experts@novatechai.site`.
 
 A bare `mailto:` link is unreliable in practice. A visitor with no mail client
 configured (common on Windows, and on any machine where the person lives in

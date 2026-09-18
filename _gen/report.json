@@ -6,7 +6,7 @@
       "title": "Enterprise AI embedded in work | NovaTechAI",
       "titleLen": 43,
       "descLen": 146,
-      "canonical": "https://novatechai.us/",
+      "canonical": "https://novatechai.site/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -34,7 +34,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -42,7 +42,7 @@
       "title": "Enterprise AI services | NovaTechAI",
       "titleLen": 35,
       "descLen": 138,
-      "canonical": "https://novatechai.us/solutions/",
+      "canonical": "https://novatechai.site/solutions/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -65,7 +65,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -73,7 +73,7 @@
       "title": "Enterprise platforms — Azure, Copilot Studio, Fabric | NovaTechAI",
       "titleLen": 65,
       "descLen": 147,
-      "canonical": "https://novatechai.us/platforms/",
+      "canonical": "https://novatechai.site/platforms/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -96,7 +96,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -104,7 +104,7 @@
       "title": "Representative client work | NovaTechAI",
       "titleLen": 39,
       "descLen": 146,
-      "canonical": "https://novatechai.us/work/",
+      "canonical": "https://novatechai.site/work/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -127,7 +127,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -135,7 +135,7 @@
       "title": "Free training with every AI solution | NovaTechAI",
       "titleLen": 49,
       "descLen": 154,
-      "canonical": "https://novatechai.us/training/",
+      "canonical": "https://novatechai.site/training/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -158,7 +158,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -166,7 +166,7 @@
       "title": "Applied AI research | NovaTechAI",
       "titleLen": 32,
       "descLen": 142,
-      "canonical": "https://novatechai.us/research/",
+      "canonical": "https://novatechai.site/research/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -189,15 +189,15 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
     "/contact/": {
-      "title": "Contact NovaTechAI | experts@novatechai.us",
+      "title": "Contact NovaTechAI | experts@novatechai.site",
       "titleLen": 42,
       "descLen": 143,
-      "canonical": "https://novatechai.us/contact/",
+      "canonical": "https://novatechai.site/contact/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -220,7 +220,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -228,7 +228,7 @@
       "title": "Blogs and insights | NovaTechAI research briefings",
       "titleLen": 50,
       "descLen": 138,
-      "canonical": "https://novatechai.us/blogs/",
+      "canonical": "https://novatechai.site/blogs/",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -251,7 +251,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -259,7 +259,7 @@
       "title": "How agentic work can help companies grow revenue | NovaTechAI",
       "titleLen": 61,
       "descLen": 153,
-      "canonical": "https://novatechai.us/blogs/agentic-ai-revenue.html",
+      "canonical": "https://novatechai.site/blogs/agentic-ai-revenue.html",
       "robots": null,
       "og": true,
       "lang": "en",
@@ -289,7 +289,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     },
@@ -320,7 +320,7 @@
       "vagueText": [],
       "emptyLinks": 0,
       "mailtos": [
-        "mailto:experts@novatechai.us"
+        "mailto:experts@novatechai.site"
       ],
       "ownership": true
     }
