@@ -30,15 +30,14 @@ be removed. Publishing invented partners misrepresents the business, and an
 invented name can collide with a real trademark. To remove the strip entirely,
 empty the `PARTNERS` array; it renders nothing below four entries.
 
-**2. The address needs your building number, and a phone number.** It is
+**2. Confirm the address and add a phone number if available.** The address is
 currently set to:
 
-> Beirut Digital District, Bechara El Khoury Street
+> Bechara El Khoury Street
 > Beirut, Beirut Governorate, Lebanon
 
-That street is correct for BDD, but you should prepend your building and floor
-(BDD buildings are numbered, e.g. `BDD 1294, 3rd floor`). `telephone` is
-deliberately **empty** — an invented number can route real callers to a
+Add a building or floor to the street address only if it applies. `telephone`
+is deliberately **empty** — an invented number can route real callers to a
 stranger, and it will fail Google Business Profile verification. Add the real
 one and the site publishes it automatically in the schema, the homepage contact
 band, the contact page and the footer.

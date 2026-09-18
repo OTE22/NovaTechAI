@@ -47,12 +47,10 @@ const PARTNERS = [
    underperforms. Leave blank and no address is published anywhere.
    Use the international phone format, e.g. "+961 1 234 567". */
 const BUSINESS = {
-  streetAddress: "Beirut Digital District, Bechara El Khoury Street",
+  streetAddress: "Bechara El Khoury Street",
   addressLocality: "Beirut",
   addressRegion: "Beirut Governorate",
   postalCode: "",   // add yours if you have one
-  // TIP: prepend your BDD building and floor to streetAddress once you have it,
-  // e.g. "BDD 1294, 3rd floor, Bechara El Khoury Street".
   addressCountry: "LB",
   telephone: "",
 };
