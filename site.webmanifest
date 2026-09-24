@@ -10,7 +10,7 @@
   "theme_color": "#070d18",
   "background_color": "#070d18",
   "icons": [
-    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any", "purpose": "any" },
+    { "src": "/assets/img/favicon-32.png", "type": "image/png", "sizes": "32x32", "purpose": "any" },
     { "src": "/assets/img/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
     { "src": "/assets/img/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
     { "src": "/assets/img/icon-maskable-512.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }

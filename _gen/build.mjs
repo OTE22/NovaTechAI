@@ -122,13 +122,6 @@ function iconDefs(used) {
     .join("\n");
   return `<svg class="icon-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="brand-gradient" x1="14" y1="15" x2="51" y2="49" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#45d6f2"/>
-      <stop offset="1" stop-color="#a98bff"/>
-    </linearGradient>
-    <symbol id="i-mark" viewBox="13 14 38 36">
-      <path d="M14 43V27l9-5v16l9-6v13l9-6V20l9-5v29l-9 5V36l-9 6V29l-9 5v14z" fill="url(#brand-gradient)" stroke="none"/>
-    </symbol>
 ${symbols}
   </defs>
 </svg>`;
@@ -201,7 +194,7 @@ ${lines.join("\n")}
 /* ------------------------------------------------------------------ shell */
 
 const brand = `<a class="brand" href="/" aria-label="NovaTechAI — home">
-      <svg class="brand__mark" aria-hidden="true" focusable="false"><use href="#i-mark"/></svg>
+      <img class="brand__mark" src="/assets/img/novatechai-logo.png" alt="" width="48" height="36" decoding="async">
       <span>NovaTech<span class="brand__ai">AI</span></span>
     </a>`;
 
@@ -551,7 +544,7 @@ ${canonical}${robots}<meta name="theme-color" content="#070d18">
 <meta name="color-scheme" content="light dark">
 ${social}
 <link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 

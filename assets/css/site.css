@@ -588,8 +588,9 @@ strong {
 }
 
 .brand__mark {
-  width: 28px;
-  height: 28px;
+  width: 48px;
+  height: 36px;
+  object-fit: contain;
   flex: none;
 }
 
